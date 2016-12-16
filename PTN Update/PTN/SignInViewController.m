@@ -9,15 +9,40 @@
 #import "SignInViewController.h"
 
 @interface SignInViewController ()
-@property(strong) UILabel* signInLabel;
+@property(weak, nonatomic) IBOutlet UILabel* signInLabel;
+@property (weak, nonatomic) IBOutlet UILabel* funnyComment;
+@property (weak, nonatomic) IBOutlet UILabel* emailLabel;
+@property (weak, nonatomic) IBOutlet UILabel* userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel* passwordLabel;
+@property (weak, nonatomic) IBOutlet UITextField* emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField* userNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField* passwordTextField;
 
 @end
 
 @implementation SignInViewController
 
+- (IBAction)backButtonPressed:(id)sender {
+    [self.navigationController popViewControllerAnimated:true];
+}
+
+- (IBAction)goButtonPressed:(id)sender {
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.emailTextField.layer.borderColor = [UIColor blackColor].CGColor;
+    self.emailTextField.layer.borderWidth = 3;
+    
+    self.userNameTextField.layer.borderColor = [UIColor blackColor].CGColor;
+    self.userNameTextField.layer.borderWidth = 3;
+    
+    self.passwordTextField.layer.borderColor = [UIColor blackColor].CGColor;
+    self.passwordTextField.layer.borderWidth = 3;
+    
 }
 
 - (void)didReceiveMemoryWarning {

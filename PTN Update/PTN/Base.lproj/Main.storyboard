@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hXQ-gg-NXt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hXQ-gg-NXt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,7 @@
                                     <segue destination="2NG-72-ooV" kind="show" id="1j3-dN-Da7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass The Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnV-Pd-3TM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass The Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnV-Pd-3TM" customClass="titleLabel">
                                 <rect key="frame" x="49.5" y="28" width="276" height="72"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="45"/>
                                 <nil key="textColor"/>
@@ -76,6 +76,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="oDf-Jq-poz"/>
+                    <connections>
+                        <outlet property="loginButton" destination="crf-y8-PC5" id="JuE-Kp-nZu"/>
+                        <outlet property="signUpButton" destination="s05-Om-XFd" id="taj-9J-BkX"/>
+                        <outlet property="titleLabel" destination="OnV-Pd-3TM" id="0bu-yK-EBV"/>
+                        <outlet property="welcomeLabel" destination="zDV-tn-fI7" id="WYa-9K-0SQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,9 +235,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PTN.baseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zem-4a-6Rk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PTN.baseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zem-4a-6Rk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uao-Il-P5V">
                                 <rect key="frame" x="16" y="38" width="30" height="30"/>
@@ -242,14 +247,14 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zb-BO-P7H">
-                                <rect key="frame" x="93" y="89" width="135" height="58"/>
+                                <rect key="frame" x="120" y="112" width="135" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or Else..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl3-eG-3fx">
-                                <rect key="frame" x="124" y="155" width="73" height="21"/>
+                                <rect key="frame" x="145" y="188" width="73" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -257,13 +262,21 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zem-4a-6Rk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="7mF-44-nrx"/>
+                            <constraint firstItem="zem-4a-6Rk" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="8LK-8y-UQq"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="zem-4a-6Rk" secondAttribute="bottom" id="DYH-Bl-hdU"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="zem-4a-6Rk" secondAttribute="bottom" id="ShN-Hj-wio"/>
+                            <constraint firstAttribute="trailing" secondItem="zem-4a-6Rk" secondAttribute="trailing" id="TP7-VP-lFR"/>
+                            <constraint firstAttribute="trailing" secondItem="zem-4a-6Rk" secondAttribute="trailing" id="waW-xO-zr0"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="xqy-WF-ac5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="382"/>
+            <point key="canvasLocation" x="885.60000000000002" y="381.85907046476763"/>
         </scene>
     </scenes>
     <resources>
