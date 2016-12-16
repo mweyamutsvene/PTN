@@ -34,9 +34,8 @@
     [self.navigationController popViewControllerAnimated:true];
 }
 
-
 - (IBAction)goButtonPressed:(id)sender {
-    
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 - (void)viewDidLoad {

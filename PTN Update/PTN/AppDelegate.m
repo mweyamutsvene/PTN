@@ -19,6 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //Check whether is logged in
+    
+    //If a user is ! logged in, present login flow
+    //Create the login flow view controllers;
+    
+    UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController* loginNavController = [storyBoard instantiateViewControllerWithIdentifier:@"LoginFlow"];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //After 1 second, calls this block of code
+        [self.window.rootViewController presentViewController:loginNavController animated:true completion:nil];
+
+    });
+    
+    
+    
     return YES;
 }
 
