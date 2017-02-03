@@ -10,6 +10,9 @@
 #import "StartViewController.h"
 #import "SignInViewController.h"
 #import "LoginViewController.h"
+#import "ContactsViewController.h"
+#import "ChatsViewController.h"
+#import "ProfileViewController.h"
 @interface AppDelegate ()
 
 @end

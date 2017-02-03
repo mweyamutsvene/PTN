@@ -27,7 +27,8 @@
 }
 
 - (IBAction)goButtonPressed:(id)sender {
-    
+    [self dismissViewControllerAnimated:true completion:nil];
+
 }
 
 

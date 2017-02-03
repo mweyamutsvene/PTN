@@ -10,6 +10,9 @@
 		0D014EDD1DEE0EB20031CEE0 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D014EDC1DEE0EB20031CEE0 /* SignInViewController.m */; };
 		0D5054251DE19B3900C4EC11 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5054241DE19B3900C4EC11 /* StartViewController.m */; };
 		0D5054281DE19B8600C4EC11 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5054271DE19B8600C4EC11 /* LoginViewController.m */; };
+		0DA5149A1E09F408006D5697 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA514991E09F408006D5697 /* ContactsViewController.m */; };
+		0DA5149D1E09F42E006D5697 /* ChatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5149C1E09F42E006D5697 /* ChatsViewController.m */; };
+		0DA514A01E09F443006D5697 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5149F1E09F443006D5697 /* ProfileViewController.m */; };
 		31C237C31DDE969000DCDAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C237C21DDE969000DCDAB8 /* main.m */; };
 		31C237C61DDE969000DCDAB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C237C51DDE969000DCDAB8 /* AppDelegate.m */; };
 		31C237CF1DDE969000DCDAB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C237CD1DDE969000DCDAB8 /* Main.storyboard */; };
@@ -24,6 +27,12 @@
 		0D5054241DE19B3900C4EC11 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = ../StartViewController.m; sourceTree = "<group>"; };
 		0D5054261DE19B8600C4EC11 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0D5054271DE19B8600C4EC11 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0DA514981E09F408006D5697 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		0DA514991E09F408006D5697 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		0DA5149B1E09F42E006D5697 /* ChatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsViewController.h; sourceTree = "<group>"; };
+		0DA5149C1E09F42E006D5697 /* ChatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsViewController.m; sourceTree = "<group>"; };
+		0DA5149E1E09F443006D5697 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		0DA5149F1E09F443006D5697 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		31C237BE1DDE969000DCDAB8 /* PTN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C237C21DDE969000DCDAB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31C237C41DDE969000DCDAB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +81,12 @@
 				0D014EDC1DEE0EB20031CEE0 /* SignInViewController.m */,
 				0D5054261DE19B8600C4EC11 /* LoginViewController.h */,
 				0D5054271DE19B8600C4EC11 /* LoginViewController.m */,
+				0DA514981E09F408006D5697 /* ContactsViewController.h */,
+				0DA514991E09F408006D5697 /* ContactsViewController.m */,
+				0DA5149B1E09F42E006D5697 /* ChatsViewController.h */,
+				0DA5149C1E09F42E006D5697 /* ChatsViewController.m */,
+				0DA5149E1E09F443006D5697 /* ProfileViewController.h */,
+				0DA5149F1E09F443006D5697 /* ProfileViewController.m */,
 				31C237CD1DDE969000DCDAB8 /* Main.storyboard */,
 				31C237D01DDE969000DCDAB8 /* Assets.xcassets */,
 				31C237D21DDE969000DCDAB8 /* LaunchScreen.storyboard */,
@@ -115,7 +130,7 @@
 		31C237B61DDE969000DCDAB8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = iFoundry;
 				TargetAttributes = {
 					31C237BD1DDE969000DCDAB8 = {
@@ -162,6 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D014EDD1DEE0EB20031CEE0 /* SignInViewController.m in Sources */,
+				0DA5149A1E09F408006D5697 /* ContactsViewController.m in Sources */,
+				0DA514A01E09F443006D5697 /* ProfileViewController.m in Sources */,
+				0DA5149D1E09F42E006D5697 /* ChatsViewController.m in Sources */,
 				0D5054251DE19B3900C4EC11 /* StartViewController.m in Sources */,
 				31C237C61DDE969000DCDAB8 /* AppDelegate.m in Sources */,
 				31C237C31DDE969000DCDAB8 /* main.m in Sources */,
@@ -209,6 +227,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -256,6 +275,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
